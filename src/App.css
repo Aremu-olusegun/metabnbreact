@@ -1,38 +1,959 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Red+Rose:wght@400;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Rose', cursive;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid green; */
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  width: 90%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0px;
+  /* border: 1px solid black; */
+}
+
+.staricon {
+  border: 1px solid black;
+  transform: scale(0.05);
+  font-size: 10px;
+  fill: #A02279;
+}
+
+.brandlogo {
+  width: 150px;
+  height: auto;
+}
+
+.homeicon {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.point:hover,
+.point:active {
+  color: #A02279;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+
+  /* text black */
+  color: #434343;
+}
+
+.links a {
+  color: #434343;
+  padding: 10px;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.App {
+  /* border: 1px solid rgb(24, 44, 134); */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.connectbutton {
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mainpage */
+
+
+.mymain {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  /* border: 1px solid black; */
+}
+
+.heroheader {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.heroheader h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 140%;
+
+  /* or 78px */
+  letter-spacing: -0.02em;
+
+  /* text black */
+  color: #434343;
+}
+
+.heroheader span {
+  color: #A02279;
+}
+
+.heroheader p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #434343;
+  margin-top: 40px;
+}
+
+.imageSection {
+  display: flex;
+  align-items: center;
+}
+
+
+.heroheader h1 {
+  font-size: 60px;
+}
+
+
+.location {
+  margin-top: 20px;
+  padding: 20px;
+  width: 50%;
+  border: 1px solid grey;
+  background-color: #ffffff;
+  border-radius: 5px 0px 0px 5px;
+  font-family: inherit;
+}
+
+.inputsection {
+  margin-top: 35px;
+}
+
+.overall {
+  width: 100%;
+  height: 100%;
+}
+
+
+.thirdsection {
+  background-color: #A02279;
+  width: 100%;
+  margin-top: 70px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.thirdsection div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.thirdsection img {
+  width: 200px;
+  height: auto;
+}
+
+.imageSection {
+  flex-shrink: 3;
+}
+
+.allframes {
+  margin-top: 60px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+}
+
+
+.starrolls {
+  scale: 0.5;
+  margin-left: -155px;
+}
+
+.inspiration {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.MetabnbNFTs h1 {
+  display: block;
+}
+
+.inspiration h2 {
+  font-family: 'Red Rose';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.allframes p {
+  font-size: 12px;
+}
+
+.locationdesc {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+
+
+.rotatedsection {
+  margin-top: 65px;
+  background-color: #A02279;
   color: white;
+  text-align: left;
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.rotatedsection div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.rotatedimages {
+  width: 604px;
+}
+
+.MetabnbNFTs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  gap: -150px;
+}
+
+.MetabnbNFTs div {
+  margin: -20px;
+}
+
+.socialicons {
+  display: flex;
+}
+
+.nftbutton {
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  font: inherit;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.alllogos {
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.socialicons div {
+  margin-right: 30px;
+}
+
+.footerlogo {
+  padding: 28px;
+}
+
+.herotext {
+  font-family: 'Red Rose';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.herosubheader {
+  font-family: 'Red Rose';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.locationdescone {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.foot2 {
+  margin-top: 40px;
+}
+
+.locationdesctwo {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 15px;
+}
+
+.one {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+
+.allframes img {
+  width: 300px;
+  height: auto;
+}
+
+.imagesectionone {
+  margin-right: 5px;
+  margin-top: 120px;
+}
+
+
+.otherlinks ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.otherlinks {
+  display: flex;
+  padding-top: 70px;
+}
+
+.locationinput {
+  padding: 15px 20px;
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.loading p {
+  margin-right: 20px;
+}
+
+.otherlinks ul li {
+  font-family: 'Red Rose';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height */
+
+  /* text black */
+  color: #434343;
+}
+
+
+/* .footersubgrid ul {
+  margin-top: 20px;
+} */
+
+.popupbox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.close {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.metamask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.cc {
+  font-size: 2rem;
+}
+
+.walletconnect span {
+  display: flex;
+  align-items: center;
+}
+
+.metamask span {
+  display: flex;
+  align-items: center;
+}
+
+.connectwallet {
+  margin-bottom: 40px;
+}
+
+.box {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #999;
+  min-height: 35%;
+  min-width: 35%;
+  translate: -50, -50;
+  border-radius: 4px;
+  border: none;
+  margin: 20px auto;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.line {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-close {
+  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: none;
+}
+
+.connectwallet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metamask {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 10px;
+}
+
+.metalogo {
+  padding-right: 10px;
+}
+
+.connectlogo {
+  padding-right: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 350px) {
+  .links {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .connectbutton {
+    display: none;
   }
+
+  .navbar {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 90%;
+  }
+
+  .heroheader h1 {
+    width: 100%;
+    line-height: 40px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .menuburger {
+    scale: 2;
+  }
+
+  .mymain {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    /* border: 1px solid black; */
+  }
+
+
+  .imageSection {
+    flex-shrink: 1;
+    margin-top: 80px;
+  }
+
+  .imageSection img {
+    width: 160px;
+  }
+
+  .thirdsection {
+    background-color: #A02279;
+    width: 100%;
+    margin-top: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .thirdsection div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  .thirdsection img {
+    width: 100px;
+    height: auto;
+  }
+
+  .inspiration h2 {
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+
+  }
+
+  .allframes {
+    margin-top: 60px;
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: 50px auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+  }
+
+  .allframes img {
+    width: 350px;
+    height: auto;
+  }
+
+  .herotext h1 {
+    font-size: 30px;
+  }
+
+  .MetabnbNFTs div {
+    margin: 5px;
+  }
+
+  .rotatedsection div {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rotatedimages {
+    width: 300px;
+  }
+
+  .herosubheader {
+    width: 100%;
+  }
+
+  .rotatedsection div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .MetabnbNFTs {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .rotatedsection div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer {
+    background-color: #181818;
+    color: 'white'
+  }
+
+  .socialicons {
+    margin-top: 20px;
+  }
+
+  .footersubgrid {
+    padding: 35px;
+  }
+
+  .footersubgrid ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    list-style: none;
+  }
+
+  .footersubgrid h2 {
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .footersubgrid div {
+    margin-top: 30px;
+  }
+
+  .search {
+    background-color: #A02279;
+    color: white;
+    font-family: inherit;
+    padding: 20px;
+    margin-left: -2px;
+    /* border: 1px solid #A02279; */
+  }
+
+  .popupbox {
+    position: fixed;
+  }
+
+  .box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    translate: -50 -50;
+  }
+
+}
+
+@media screen and (min-width: 750px) {
+  .allframes {
+    margin-top: 60px;
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 50px auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+  }
+
+  .rotatedimages {
+    width: 500px;
+    align-self: center;
+  }
+
+  .herotext h1 {
+    font-size: 54px;
+  }
+
+  .herosubheader {
+    font-size: 20px;
+  }
+
+  .inspiration h2 {
+    font-size: 38px;
+  }
+
+  .imageSection img {
+    width: 300px;
+  }
+
+  .heroheader h1 {
+    font-size: 54px;
+    line-height: 4.5rem;
+  }
+
+  .thirdsection img {
+    width: 180px;
+    height: auto;
+  }
+
+  .footergrid {
+    display: flex;
+    align-items: center;
+  }
+
+  .footersubgrid {
+    display: flex;
+    width: 100%;
+  }
+
+  .footersubgrid div {
+    margin-right: 20px;
+  }
+
+  .search {
+    width: 50%;
+    border: 1px solid rgb(206, 206, 206);
+  }
+
+  .popupbox {
+    position: fixed;
+  }
+
+  .box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width:915px){
+  .allframes {
+    margin-top: 60px;
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    width: 70%;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+  }
+
+  .popupbox {
+    position: fixed;
+  }
+
+  .box {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+
+  .MetabnbNFTs {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 0px;
+    /* border: 1px solid black; */
+  }
+  
+  .staricon {
+    border: 1px solid black;
+    transform: scale(0.05);
+    font-size: 10px;
+    fill: #A02279;
+  }
+  
+  .brandlogo {
+    width: 150px;
+    height: auto;
+  }
+
+  .links {
+    display: block;
+  }
+
+  .connectbutton {
+    display: block;
+  }
+
+  .mymain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .heroheader {
+    width: 50%;
+  }
+
+  .menuburger {
+    display: none;
+  }
+
+  .imageSection {
+    margin-top: 0;
+  }
+
+  .imageSection {
+    width: 50%;
+  }
+
+  .imagesectionone {
+    margin-left: 80px;
+  }
+  .imagesectiontwo {
+    margin-right: 40px;
+  }
+
+  .thirdsection div {
+    width: 70%;
+  }
+
+  .rotatedsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .allframes {
+    margin-top: 60px;
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 50px auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+  }
+
+  .popupbox {
+    position: fixed;
+  }
+
+  .rotatedsection div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rotatedimages {
+    width: 650px;
+  }
+
+  .rotatedimages {
+    width: 500px;
+    align-self: center;
+  }
+
+  .rotatedsection {
+    padding: 45px;
+  }
+
+  .MetabnbNFTs div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: left;
+  } 
+  
 }
